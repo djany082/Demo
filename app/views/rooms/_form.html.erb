@@ -1,0 +1,4 @@
+<%= simple_form_for Room.new , html: { id: "start-chat-form"} do |form| %>
+  <%= form.input :name, id: :name %>
+  <%= form.submit "Start Chat", class: 'btn btn-primary btn-block mt-2' %>
+<% end %>

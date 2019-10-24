@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= render 'shared/head' %>
+  </head>
+
+  <body>
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+              <%= render partial: 'shared/navbar' %>
+              <%= render 'shared/notices' %>
+              <%= yield %>
+            </div>
+        </div>
+    </div>
+
+    <%= render 'shared/footer' %>
+  </body>
+</html>
