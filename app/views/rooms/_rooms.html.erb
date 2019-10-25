@@ -1,7 +1,9 @@
 <div class="mb-3">
-  <%= link_to new_room_path, class: 'btn btn-primary' do %>
-    Create a room
-  <% end %>
+<% if @room.present? %>
+      <h1>
+      <%= @room.name %>
+      </h1>
+<%  end %>
 </div>
 
 <% if @rooms.present? %>
